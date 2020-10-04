@@ -1,9 +1,9 @@
 export default {
-  mode: 'universal',
   target: 'static',
   router: {
     base: '/report-page/'
   },
+  components: true,
   /*
    ** Headers of the page
    */
@@ -18,7 +18,33 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css',
+        integrity:
+          'sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK',
+        crossorigin: 'anonymous'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'
+      }
+    ],
+    script: [
+      {
+        src:
+          'https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js',
+        integrity:
+          'sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD',
+        crossorigin: 'anonymous',
+        body: true
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -27,7 +53,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/style.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -35,10 +61,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxt/components'],
   /*
    ** Nuxt.js modules
    */
