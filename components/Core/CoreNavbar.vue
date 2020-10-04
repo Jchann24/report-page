@@ -23,9 +23,7 @@
       <div id="navbarContent" class="collapse navbar-collapse">
         <ul class="navbar-nav  ml-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link mr-md-4 p-0" aria-current="page" href="#"
-              >Home</a
-            >
+            <a class="nav-link mr-md-4 p-0" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mr-md-4 p-0" href="#">Link</a>
