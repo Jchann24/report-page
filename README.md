@@ -2,6 +2,10 @@
 
 > Report page for enrichment second term
 
+## DEMO
+
+[DEMO LINK](https://jchann24.github.io/report-page/)
+
 ## Build Setup
 
 ```bash
