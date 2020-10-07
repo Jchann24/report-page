@@ -6,7 +6,7 @@
     <div id="content">
       <nuxt />
     </div>
-    <CoreFooter />
+    <!-- <CoreFooter /> -->
   </div>
 </template>
 
