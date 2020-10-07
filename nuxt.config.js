@@ -8,7 +8,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Enrichment Report',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +20,12 @@ export default {
     ],
 
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href:
+          'https://icon-library.com/images/github-icon-svg/github-icon-svg-16.jpg'
+      },
       {
         rel: 'stylesheet',
         href:
@@ -49,7 +54,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#428fc9' },
   /*
    ** Global CSS
    */
@@ -65,7 +70,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxt/content'],
   /*
    ** Build configuration
    */

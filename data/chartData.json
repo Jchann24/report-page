@@ -1,0 +1,22 @@
+{
+  "userRequirements": {
+    "chartData": {
+      "labels": ["Done", "On Going"],
+      "datasets": [
+        {
+          "borderWidth": 1,
+          "backgroundColor": ["rgba(3, 198, 252,1)", "rgba(252, 3, 3, 0.51)"],
+          "data": [20, 80]
+        }
+      ]
+    },
+    "options": {
+      "legend": {
+        "display": true
+      },
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "animation": { "animateScale": true }
+    }
+  }
+}
